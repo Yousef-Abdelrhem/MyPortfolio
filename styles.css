@@ -1,0 +1,381 @@
+:root{
+    --Navy: #0a192f;
+    --Light-Navy: #112240;
+    --Lightest-Navy	: #233554;
+    --Slate: #8892b0;
+    --Light-Slate: #a8b2d1;
+    --Lightest-Slate: #ccd6f6;
+    --White: #e6f1ff;
+    --Green: #64ffda;
+	
+}
+
+/* Fonts */
+
+/* Define NTR-Regular font */
+/* NTR-Regular */
+@font-face {
+    font-family: 'NTR';
+    src: url('./fonts/NTR-Regular.ttf') format('truetype');
+    font-weight: 400; /* Normal weight */
+    font-style: normal;
+}
+
+/* Package (Style not specified, assumed Regular) */
+@font-face {
+    font-family: 'Package';
+    src: url('./fonts/package.ttf') format('truetype');
+    font-weight: 400; /* Normal weight */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SourceSerifPro';
+    src: url('./fonts/SourceSerifPro-Black.ttf') format('truetype');
+    font-weight: 900; /* Black (Heavy) */
+    font-style: normal;
+}
+
+/* SourceSerifPro Black Italic */
+@font-face {
+    font-family: 'SourceSerifPro';
+    src: url('./fonts/SourceSerifPro-BlackItalic.ttf') format('truetype');
+    font-weight: 900; /* Black (Heavy) */
+    font-style: italic;
+}
+
+/* SourceSerifPro Bold */
+@font-face {
+    font-family: 'SourceSerifPro';
+    src: url('./fonts/SourceSerifPro-Bold.ttf') format('truetype');
+    font-weight: 700; /* Bold */
+    font-style: normal;
+}
+
+/* SourceSerifPro Bold Italic */
+@font-face {
+    font-family: 'SourceSerifPro';
+    src: url('../fonts/SourceSerifPro-BoldItalic.ttf') format('truetype');
+    font-weight: 700; /* Bold */
+    font-style: italic;
+}
+
+/* SourceSerifPro ExtraLight */
+@font-face {
+    font-family: 'SourceSerifPro';
+    src: url('./fonts/SourceSerifPro-ExtraLight.ttf') format('truetype');
+    font-weight: 300; /* ExtraLight */
+    font-style: normal;
+}
+/* SourceSerifPro ExtraLight Italic */
+@font-face {
+    font-family: 'SourceSerifPro';
+    src: url('./fonts/SourceSerifPro-ExtraLightItalic.ttf') format('truetype');
+    font-weight: 300; /* ExtraLight */
+    font-style: italic;
+}
+
+/* SourceSerifPro Italic */
+@font-face {
+    font-family: 'SourceSerifPro';
+    src: url('./fonts/SourceSerifPro-Italic.ttf') format('truetype');
+    font-weight: 400; /* Regular */
+    font-style: italic;
+}
+
+/* SourceSerifPro Light */
+@font-face {
+    font-family: 'SourceSerifPro';
+    src: url('./fonts/SourceSerifPro-Light.ttf') format('truetype');
+    font-weight: 300; /* Light */
+    font-style: normal;
+}
+
+/* SourceSerifPro Light Italic */
+@font-face {
+    font-family: 'SourceSerifPro';
+    src: url('./fonts/SourceSerifPro-LightItalic.ttf') format('truetype');
+    font-weight: 300; /* Light */
+    font-style: italic;
+}
+
+/* SourceSerifPro Regular */
+@font-face {
+    font-family: 'SourceSerifPro';
+    src: url('./fonts/SourceSerifPro-Regular.ttf') format('truetype');
+    font-weight: 400; /* Regular */
+    font-style: normal;
+}
+
+/* SourceSerifPro SemiBold */
+@font-face {
+    font-family: 'SourceSerifPro';
+    src: url('./fonts/SourceSerifPro-SemiBold.ttf') format('truetype');
+    font-weight: 600; /* SemiBold */
+    font-style: normal;
+}
+
+/* SourceSerifPro SemiBold Italic */
+@font-face {
+    font-family: 'SourceSerifPro';
+    src: url('./fonts/SourceSerifPro-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600; /* SemiBold */
+    font-style: italic;
+}
+
+
+/* Repeat for other font variations as needed */
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color : var(--Navy) !important;
+    font-family: "NTR", sans-serif;
+    color: var(--Lightest-Slate) !important;
+}
+
+/* NavBar */
+
+.navbar{
+    background-color: var(--Light-Navy) !important;
+    background: black;
+    color: white;
+
+}
+
+
+.iconContainer {
+    display: inline-block;
+    width: 50px; 
+    height: 50px; 
+    text-align: center; 
+    line-height: 50px; 
+  }
+
+
+.iconContainer i {
+    font-size: 20px; 
+    color: #ffffff; 
+   
+}
+
+.iconContainer i:hover{
+    color: #64ffda;
+}
+
+.navList{
+    font-size: 1rem;
+    font-weight: 700;
+}
+.navList .navbar-brand{
+    color: #64ffda;
+    /* color: var(--Lightest-Slate); */
+
+}
+.navList .navbar-brand:hover{
+    color: white;
+}
+
+.NavLinks{
+color: white;
+
+}
+.NavLinks:hover{
+    color: var(--Green);
+}
+.Navlist{
+    margin-top: 0.1rem;
+
+}
+
+/* Banner */
+
+.banner h1{
+    text-align: center;
+    font-size: 2rem !important;
+    font-weight: 400;
+}
+.name{
+    font-family: 'NTR';
+    color: var(--Green);
+    font-size: 2.2rem;
+
+    font-weight: bold;
+}
+
+.intro-title{
+    color: var(--Slate);
+    line-height: 1.7rem;
+}
+.intro-subtitle {
+    margin: 0;
+    font-size: 1.5rem;
+}
+.intro-desc {
+    font-size: 1rem;
+    max-width: unset;
+    padding-bottom: 40px;
+}
+
+.btn-outline-success{
+    color: var(--Green) !important;
+    border-color: var(--Green)!important;
+    width: 130px;
+    height: 60px;
+    padding: 10px 30px;
+}
+
+.btn-outline-success div{
+    font-size: 1rem;
+    margin-right: 0.3rem;
+}
+
+.btn-outline-success a{
+    color : var(--Green) ;
+    font-weight: 500;
+}
+
+.btn:hover{
+        background-color: none !important;
+}
+
+
+/* canvas */
+* {
+    margin: 0;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+body {
+    background: #F2F2F2;
+}
+#c {
+    display: block;
+    margin: 20px auto 0;
+}
+#info {
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    width: auto;
+    max-width: 420px;
+    height: auto;
+    background: #f8f8f8;
+    border-bottom-right-radius: 10px;
+    border:1px solid #ccc;
+}
+#top {
+    background: #fff;
+    width: 100%;
+    height: auto;
+    position: relative;
+    border-bottom: 1px solid #eee;
+}
+p {
+    font-family: Arial, sans-serif;
+    color: #666;
+    text-align: justify;
+    font-size: 16px;
+    margin: 0px 16px;
+}
+#github, #twitter {
+  color:#3377ee;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  margin: 0 auto;
+  text-align: center;
+  text-decoration:none;
+}
+.center {
+  text-align: center;
+}
+#net {
+  text-align:center;
+  white-space:nowrap;
+  font-size:19px;
+  background:rgba(0,0,0,0.1);
+  padding:8px 12px;
+  border-radius:8px;
+  display:block;
+  color:#888;
+}
+#net > span {
+  color:#3377ee;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  text-decoration:none;
+}
+a {
+    font-family: sans-serif;
+    color: #444;
+    text-decoration: none;
+    font-size: 20px;
+}
+#site {
+    float: left;
+    margin: 10px;
+    color: #ff9900;
+  border-bottom: 1px dashed #ccc;
+  padding-bottom:3px
+}
+#site:hover {
+    color: #ffaa11;
+}
+#close {
+    float: right;
+    margin: 10px;
+}
+#p {
+    font-family: Verdana, sans-serif;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    color: #4099ff;
+    border: 1px dashed #4099ff;
+    padding: 4px 8px;
+}
+
+#new {
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  font-family: Helvetica;
+  margin-top: 12px;
+}
+
+#new a {
+  font-size: 20px;
+  color: #4099ff;
+}
+
+.bull {
+  opacity: 0.3;
+  margin: 0 6px;
+  font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
