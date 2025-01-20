@@ -4,7 +4,7 @@ const container = document.getElementById("fractal-tree");
 // Create the canvas
 const canvas = document.createElement("canvas");
 canvas.width = 400;
-canvas.height = 400;
+canvas.height = 370;
 container.appendChild(canvas);
 
 // Set up the canvas context
