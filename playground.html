@@ -15,9 +15,15 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
     />
 
+    <!-- Remove Cdn -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+    />
+
     <link rel="stylesheet" href="./styles/bootstrap-utilities.min.css" />
-      <!-- Remove Cdn -->
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>play</title>
   </head>
   <body>
@@ -51,91 +57,27 @@
 
     <section class="Container-width">
       <div class="Main-Content">
-        <section
-          class="banner container-fluid d-flex flex-column align-items-center"
-        >
-          <div id="fractal-tree"></div>
-          <img src="" alt="" />
-          <h1 class="">hi, <span class="name">Yousef</span> here.</h1>
-          <div class="container intro-title">
-            <div class="intro-subtitle text-center mb-3">
-              I create stuff sometimes.
-            </div>
-            <div class="intro-desc text-center">
-              I'm a software engineer from Toronto, Canada. I'm fascinated by
-              large-scale, high-impact products and contributed to major feature
-              launches in industry-leading services as well as apps that have
-              100M+ installs.
-            </div>
-          </div>
-          <button
-            type="button"
-            class="btn btn-outline-success d-flex align-items-center justify-content-center"
-          >
-            <div class="d-inline"><i class="bi bi-envelope-fill"></i></div>
-            <a
-              href="mailto:yousefabdelrhem1@gmail.com"
-              class="intro-contact text-decoration-none"
-            >
-              Say hi!</a
-            >
-          </button>
-        </section>
-
+        
         <div class="container section-header">
-          <span class="section-title fs-1">/ about me</span>
+          <span class="section-title fs-1">/ Project</span>
         </div>
+       
+        <div class="card card-project mb-3" style="max-width: 18rem;">
+          <div class="card-header d-flex justify-content-between p-0 fs-1">           
+             <div class="iconContainer file-icon"><i class="bi bi-file-earmark-code-fill"></i></div>
+          <div class="d-flex gap-0 me-1">
+            <div class="iconContainer"><a href=""><i class="bi bi-eye-fill"></i></a></div>
 
-        <div class="about-content sub-text ">
-          <div class="about-description">
-            <p>
-              I am currently a <b>Software Development Engineer</b> at<a
-                href="https://www.aboutamazon.com/"
-              >
-                Amazon</a
-              >, working in the AWS sector under team Route 53. At the same
-              time, I am undertaking a part-time <b> Master's of Science</b> in
-              <b>Software Engineering </b>at
-              <a href="https://www.ox.ac.uk/about">University of Oxford</a>.
-            </p>
-            Here are some technologies I have been working with:
-            <ul class="container tech-stack list-unstyled">
-              <div class="row">
-                <div class="fade-in-section is-visible col">
-                  <li>Typescript</li>
-                </div>
-                <div class="fade-in-section is-visible col">
-                  <li>Python</li>
-                </div>
-              </div>
-              
-              <div class="row">
-                <div class="fade-in-section is-visible col">
-                  <li>React.js</li>
-                </div>
-                <div class="fade-in-section is-visible col">
-                  <li>Java</li>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="fade-in-section is-visible col">
-                  <li>Javascript ES6+</li>
-                </div>
-                <div class="fade-in-section is-visible col">
-                  <li>C#</li>
-                </div>
-                
-              </div>
-            </ul>
-            <p>
-              Outside of work, I'm interested in following the developments of
-              science. I also play a lot of video games. And make TikToks.
-            </p>
+            <div class="iconContainer"><a href=""><i class="bi bi-github"></i></a></div>
           </div>
         </div>
-
+          <div class="card-body">
+            <h5 class="card-title card-heading">TDSB Homework Management Interfac</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <div class="card-tech">Java, Android Studio</div>
+          </div>
       </div>
+
     </section>
 
     <script
@@ -144,7 +86,11 @@
     ></script>
 
     <!-- remove the script cdn -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
 
     <script src="./js/FractalTree.js"></script>
   </body>

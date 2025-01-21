@@ -303,9 +303,7 @@ color: white;
     font-weight: 500;
 }
 
-.btn:hover{
-        background-color: none !important;
-}
+
 
 /* canvas */
 
@@ -360,16 +358,57 @@ color: white;
 }
 .about-description{
     position: relative;
+    word-spacing: 5px;
 }
 .about-description li::before {
     content: "▹ ";
     color: var(--Green);
     left: -13px;
+
 }
 
 .about-description a{
     text-decoration: none;
     font-weight: bold;
     color: var(--Green);
+}
+
+
+/* Projects */
+
+.card-project{
+    padding: 1rem;
+    background-color: var(--Light-Navy) !important;
+    color: var(--Light-Slate) !important;
+    border-radius: 1rem !important;
+}
+
+.card-project:hover{
+    background-color: var(--Lightest-Navy) !important;
+    transform: scale(1.1);
+    transform: translate(0,-5px);
+
+}
+.card-header{
+
+}
+
+.card-heading{
+    color: var(--Lightest-Slate) !important;
+    font-weight: bold ;
+    margin-bottom: 1rem !important;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    margin-top: 1rem;
+}
+
+.file-icon i{
+    color: var(--Green) ;
+    font-size: 25px;
+    margin-left: 10px;
+}
+.card-tech{
+    font-size: 0.7rem;
+    font-weight: bold;
 }
 
