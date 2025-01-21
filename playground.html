@@ -3,27 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio website of Yousef, a Full Stack Node.js Developer showcasing projects, skills, and experience." />
+    <meta name="keywords" content="Yousef, Full Stack Developer, Node.js, Portfolio, Projects, Web Development" />
+    <meta name="author" content="Yousef Abdelrhem" />
+
     <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="stylesheet" href="./styles/FractalTree.css" />
-
-    <link
-      rel="stylesheet"
-      href="node_modules\bootstrap\dist\css\bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
-    />
-
-    <!-- Remove Cdn -->
-    <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-    crossorigin="anonymous"
-    />
-
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" />
     <link rel="stylesheet" href="./styles/bootstrap-utilities.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+    <link rel="icon" href="letter-y_8142714.png" type="image/png" />
+
     <title>play</title>
   </head>
   <body>
@@ -32,52 +25,379 @@
         class="container-fluid justify-content-end justify-content-around p-0"
       >
         <div class="d-md-flex navList">
-          <a class="navbar-brand" href="#">Youssef </a>
+          <div class="navbar-brand" href="">Youssef</div>
           <ul
             class="Navlist d-none d-md-flex align-items-center list-unstyled gap-3 mb-0"
           >
-            <li><a href="" class="NavLinks text-decoration-none">Home</a></li>
-            <li><a href="" class="NavLinks text-decoration-none">About</a></li>
+            <li>
+              <a href="#Home" class="NavLinks text-decoration-none">Home</a>
+            </li>
+            <li>
+              <a href="#section-header" class="NavLinks text-decoration-none"
+                >About</a
+              >
+            </li>
             <li>
               <a href="" class="NavLinks text-decoration-none">Experiance</a>
             </li>
             <li>
-              <a href="" class="NavLinks text-decoration-none">Project</a>
+              <a href="#projects" class="NavLinks text-decoration-none"
+                >Project</a
+              >
             </li>
           </ul>
         </div>
 
         <div class="d-flex">
-          <div class="iconContainer"><i class="bi bi-envelope"></i></div>
-          <div class="iconContainer"><i class="bi bi-github"></i></div>
-          <div class="iconContainer"><i class="bi bi-linkedin"></i></div>
+          <div class="iconContainer">
+            <a href="mailto:yousefabdelrhem1@gmail.com"
+              ><i class="bi bi-envelope"></i
+            ></a>
+          </div>
+          <div class="iconContainer">
+            <a href="https://github.com/Yousef-Abdelrhem"
+              ><i class="bi bi-github"></i
+            ></a>
+          </div>
+          <div class="iconContainer">
+            <a href="https://www.linkedin.com/in/yousefabdelrhem/"
+              ><i class="bi bi-linkedin"></i
+            ></a>
+          </div>
         </div>
       </div>
     </nav>
 
     <section class="Container-width">
       <div class="Main-Content">
-        
-        <div class="container section-header">
+        <section
+          id="Home"
+          class="banner container-fluid d-flex flex-column align-items-center justify-content-center"
+        >
+          <div id="fractal-tree" data-aos="fade-up"></div>
+          <img src="" alt="" />
+          <h1 class="" data-aos="fade-up">
+            hi, <span class="name">Yousef</span> here.
+          </h1>
+          <div
+            data-aos="fade-up"
+            class="container intro-title d-flex flex-column align-items-center text-center"
+          >
+            <div class="intro-subtitle text-center mb-3">
+              I create stuff sometimes.
+            </div>
+            <div class="intro-desc" data-aos="fade-up">
+              I'm a <span class="fw-bold">Full Stack Node.Js</span> from Egypt,
+              Cairo. I Love making websites. I like making fun, interactive
+              things with code. Let's work together.
+            </div>
+          </div>
+          <button
+            data-aos="fade-up"
+            type="button"
+            class="btn btn-outline-success d-flex align-items-center justify-content-center"
+          >
+            <div class="d-inline"><i class="bi bi-envelope-fill"></i></div>
+            <a
+              href="mailto:yousefabdelrhem1@gmail.com"
+              class="intro-contact text-decoration-none"
+            >
+              Say hi!</a
+            >
+          </button>
+        </section>
+
+        <div
+          class="container section-header"
+          id="section-header"
+          data-aos="fade-right"
+        >
+          <span class="section-title fs-1">/ about me</span>
+        </div>
+
+        <div class="about-content sub-text" data-aos="fade-right">
+          <div class="about-description">
+            <p>
+              I am enrolled in a 9-month Web and UI professional program at
+              <span class="bold">ITI</span>, where I am gaining hands-on
+              experience in the field of software development. I have graduated
+              with a<span class="bold">
+                Bachelor's degree in Computer Science</span
+              >
+              from Suez Canal University and am now actively seeking
+              opportunities to work as a Full-Stack Developer, particularly with
+              Node.js
+            </p>
+            Here are some technologies I have been working with:
+            <ul class="container tech-stack list-unstyled">
+              <div class="row">
+                <div
+                  class="fade-in-section is-visible col"
+                  data-aos="fade-right"
+                  data-aos-duration="500"
+                >
+                  <li>ES6+</li>
+                </div>
+                <div
+                  class="fade-in-section is-visible col"
+                  data-aos="fade-right"
+                  data-aos-duration="800"
+                >
+                  <li>Typescript</li>
+                </div>
+              </div>
+
+              <div class="row">
+                <div
+                  class="fade-in-section is-visible col"
+                  data-aos="fade-right"
+                  data-aos-duration="1100"
+                >
+                  <li>React.js</li>
+                </div>
+                <div
+                  class="fade-in-section is-visible col"
+                  data-aos="fade-right"
+                  data-aos-duration="1400"
+                >
+                  <li>Angular</li>
+                </div>
+              </div>
+
+              <div class="row">
+                <div
+                  class="fade-in-section is-visible col"
+                  data-aos="fade-right"
+                  data-aos-duration="1800"
+                >
+                  <li>Node.js</li>
+                </div>
+                <div
+                  class="fade-in-section is-visible col"
+                  data-aos="fade-right"
+                  data-aos-duration="2000"
+                >
+                  <li>MongoDB</li>
+                </div>
+              </div>
+            </ul>
+            <p>
+              Additionally, I have knowledge of
+              <span class="bold">UI/UX</span> design, Outside of work, I enjoy
+              exploring the latest trends in technology and development.
+            </p>
+          </div>
+        </div>
+
+        <div class="container section-header" data-aos="fade-right">
           <span class="section-title fs-1">/ Project</span>
         </div>
-       
-        <div class="card card-project mb-3" style="max-width: 18rem;">
-          <div class="card-header d-flex justify-content-between p-0 fs-1">           
-             <div class="iconContainer file-icon"><i class="bi bi-file-earmark-code-fill"></i></div>
-          <div class="d-flex gap-0 me-1">
-            <div class="iconContainer"><a href=""><i class="bi bi-eye-fill"></i></a></div>
 
-            <div class="iconContainer"><a href=""><i class="bi bi-github"></i></a></div>
+        <section class="cards" id="projects">
+          <div class="row gap-1 mb-0 justify-content-center">
+            <div
+              data-aos="fade-up"
+              class="card card-project mb-3 col-12 col-md-4"
+              style="max-width: 18rem"
+            >
+              <div class="card-header d-flex justify-content-between p-0 fs-1">
+                <div class="iconContainer file-icon">
+                  <i class="bi bi-file-earmark-code-fill"></i>
+                </div>
+                <div class="d-flex gap-0 me-1">
+                  <!-- <div class="iconContainer">
+                    <a href=""><i class="bi bi-eye-fill"></i></a>
+                  </div> -->
+                  <div class="iconContainer">
+                    <a href="https://github.com/TripLash/Triplash-Web-Front"
+                      ><i class="bi bi-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title card-heading">Tourists Guide Webapp</h5>
+                <p class="card-text">
+                  a web application that connects tourists with local tour
+                  guides and tours, similar to Airbnb and Booking. <br />video
+                  demonstration and design<br />
+                  <a
+                    href="https://drive.google.com/file/d/1hoLbGNKH0JnYwM7l9pw0s7wBkEANnKRW/view"
+                    class="bold text-decoration-none fw-semibold"
+                    >Video</a
+                  >
+                  <br />
+                  <!-- Figma design <br /> -->
+                  <a
+                    href="https://www.figma.com/design/zCmAEixVuqhsC7XDVqEsKk/Guide-App?node-id=0-1&t=gqyAVumskxk3ZWXL-1"
+                    class="bold text-decoration-none fw-semibold"
+                    >Figma Design</a
+                  >
+                </p>
+                <div class="card-tech">React.js, Checkra Ui, Typescript</div>
+              </div>
+            </div>
+
+            <div
+              data-aos="fade-up"
+              class="card card-project mb-3 col-12 col-md-4"
+              style="max-width: 18rem"
+            >
+              <div class="card-header d-flex justify-content-between p-0 fs-1">
+                <div class="iconContainer file-icon">
+                  <i class="bi bi-file-earmark-code-fill"></i>
+                </div>
+                <div class="d-flex gap-0 me-1">
+                  <div class="iconContainer">
+                    <a href="https://joeyify.vercel.app/"
+                      ><i class="bi bi-eye-fill"></i
+                    ></a>
+                  </div>
+                  <div class="iconContainer">
+                    <a href="https://github.com/Yousef-Abdelrhem/Joeyify"
+                      ><i class="bi bi-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title card-heading">Cloud Hosting</h5>
+                <p class="card-text">
+                  Cloud Hosting Website with Responsive Design for Mobile and
+                  Desktop.
+                </p>
+                <div class="card-tech">Html5 - Css3 - JavaScript</div>
+              </div>
+            </div>
+
+            <div
+              data-aos="fade-up"
+              class="card card-project mb-3 col-12 col-md-4"
+              style="max-width: 18rem"
+            >
+              <div class="card-header d-flex justify-content-between p-0 fs-1">
+                <div class="iconContainer file-icon">
+                  <i class="bi bi-file-earmark-code-fill"></i>
+                </div>
+                <div class="d-flex gap-0 me-1">
+                  <div class="iconContainer">
+                    <a href="https://mostafa-elaydy.vercel.app/"
+                      ><i class="bi bi-eye-fill"></i
+                    ></a>
+                  </div>
+                  <div class="iconContainer">
+                    <a href="https://github.com/Yousef-Abdelrhem/Mostafa-Elaydy"
+                      ><i class="bi bi-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title card-heading">Gym Fitness Portfolio</h5>
+                <p class="card-text">
+                  Real Fitness Coach Website with Responsive Design for Mobile
+                  and Desktop.
+                </p>
+                <div class="card-tech">Html5 - Css3 - JavaScript</div>
+              </div>
+            </div>
           </div>
-        </div>
-          <div class="card-body">
-            <h5 class="card-title card-heading">TDSB Homework Management Interfac</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <div class="card-tech">Java, Android Studio</div>
+
+          <div class="row gap-1 justify-content-center">
+            <div
+              data-aos="fade-up"
+              class="card card-project mb-3 col-12 col-4"
+              style="max-width: 18rem"
+            >
+              <div class="card-header d-flex justify-content-between p-0 fs-1">
+                <div class="iconContainer file-icon">
+                  <i class="bi bi-file-earmark-code-fill"></i>
+                </div>
+                <div class="d-flex gap-0 me-1">
+                  <!-- <div class="iconContainer">
+                    <a href=""><i class="bi bi-eye-fill"></i></a>
+                  </div> -->
+                  <div class="iconContainer">
+                    <a href="https://github.com/Yousef-Abdelrhem/Game-hub"
+                      ><i class="bi bi-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title card-heading">Game Hub</h5>
+                <p class="card-text">
+                  Game Hub is a sleek and responsive gaming platform built. It
+                  allows users to discover, search, and filter games by genre,
+                  platform, and ratings.
+                </p>
+                <div class="card-tech">React.js - TypeScript - Chakra UI</div>
+              </div>
+            </div>
+
+            <div
+              data-aos="fade-up"
+              class="card card-project mb-3 col-12 col-md-4"
+              style="max-width: 18rem"
+            >
+              <div class="card-header d-flex justify-content-between p-0 fs-1">
+                <div class="iconContainer file-icon">
+                  <i class="bi bi-file-earmark-code-fill"></i>
+                </div>
+                <div class="d-flex gap-0 me-1">
+                  <div class="iconContainer">
+                    <a href=""><i class="bi bi-eye-fill"></i></a>
+                  </div>
+                  <div class="iconContainer">
+                    <a href=""><i class="bi bi-github"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title card-heading">Expenses Tracker App</h5>
+                <p class="card-text">
+                  web application for tracking daily expenses and managing
+                  budgets. it allows users to log expenses, set financial goals.
+                </p>
+                <div class="card-tech">TypeScript - Html5 - Css3</div>
+              </div>
+            </div>
+
+            <div
+              data-aos="fade-up"
+              class="card card-project mb-3 col-12 col-md-4"
+              style="max-width: 18rem"
+            >
+              <div class="card-header d-flex justify-content-between p-0 fs-1">
+                <div class="iconContainer file-icon">
+                  <i class="bi bi-file-earmark-code-fill"></i>
+                </div>
+                <div class="d-flex gap-0 me-1">
+                  <!-- <div class="iconContainer">
+                    <a href=""><i class="bi bi-eye-fill"></i></a>
+                  </div> -->
+                  <div class="iconContainer">
+                    <a
+                      href="https://github.com/Yousef-Abdelrhem/ES6/tree/main/Day%202/Product%20Shop"
+                      ><i class="bi bi-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title card-heading">Product Shop</h5>
+                <p class="card-text">
+                  JavaScript-based application showcasing ES6 features. It
+                  allows users to explore a list of products with
+                  functionalities like filtering and sorting. The project
+                  demonstrates modern JavaScript practices.
+                </p>
+                <div class="card-tech">ES6</div>
+              </div>
+            </div>
           </div>
+        </section>
       </div>
-
     </section>
 
     <script
@@ -93,5 +413,13 @@
     ></script>
 
     <script src="./js/FractalTree.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1200,
+        easing: "ease-out",
+        once: true,
+      });
+    </script>
   </body>
 </html>

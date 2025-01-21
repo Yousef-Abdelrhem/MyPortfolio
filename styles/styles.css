@@ -205,7 +205,8 @@ body{
     color: #64ffda;
 }
 .navList .navbar-brand:hover{
-    color: white;
+    color: var(--Green) !important;
+
 }
 
 .NavLinks{
@@ -347,7 +348,7 @@ color: white;
     font-size: 1rem;
     line-height: 1.5rem;
     display: upset;
-    padding: 0.3rem;
+    padding-left: 0.5rem;
     color: var(--Slate);
 }
 
@@ -364,7 +365,6 @@ color: white;
     content: "▹ ";
     color: var(--Green);
     left: -13px;
-
 }
 
 .about-description a{
@@ -372,15 +372,20 @@ color: white;
     font-weight: bold;
     color: var(--Green);
 }
+.bold{
+    font-weight: semibold;
+    color: var(--Green);
+}
 
 
 /* Projects */
 
 .card-project{
-    padding: 1rem;
+    padding: 0.1rem;
     background-color: var(--Light-Navy) !important;
     color: var(--Light-Slate) !important;
     border-radius: 1rem !important;
+    /* min-width: 300px !important; */
 }
 
 .card-project:hover{
@@ -390,7 +395,7 @@ color: white;
 
 }
 .card-header{
-
+border-bottom: 0 !important;
 }
 
 .card-heading{
@@ -410,5 +415,8 @@ color: white;
 .card-tech{
     font-size: 0.7rem;
     font-weight: bold;
+    margin-bottom: 2rem
 }
+
+
 
